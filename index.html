@@ -61,23 +61,39 @@ $(document).ready(function(){
 <button id="browbtn"><img src="browser.png" width="15px" height="15px"> Browser</button>
 </div>
 <div id="paint">
- <div id="header-1">Doggle <button id="hideart">X</button></div>
+ <div id="header-1"><img src="browser.png" width="15px" height="15px">Doggle <button id="hideart">X</button></div>
    <iframe src="art.html" width="496" height="460px"></iframe>
 </div>
 <div id="calculator">
- <div id="header-1">Calculator <button id="hide">X</button></div>
+ <div id="header-1"><img src="calc.png" width="15px" height="15px">Calculator <button id="hide">X</button></div>
    <iframe src="calc.html" width="496" height="460px"></iframe>
 </div>
 <div id="ide">
- <div id="header-1">Code Editor <button id="hideide">X</button></div>
+ <div id="header-1"><img src="ide.png" width="15px" height="15px">Code Editor <button id="hideide">X</button></div>
   <iframe src="ide.html" width="496" height="460px"></iframe>
 </div>
 <div id="browser">
- <div id="header-1">Browser <button id="hidebrow">X</button></div>
+ <div id="header-1"><img src="browser.png" width="15px" height="15px">Browser <button id="hidebrow">X</button></div>
   <iframe src="https://www.google.com/webhp?igu=1" width="900px" height="600px"></iframe>
 </div>
 </body>
 <style type="text/css">
+#browbtn:hover {
+  background: white;
+  color: black;
+}
+#calcbtn:hover {
+  background: white;
+  color: black;
+}
+#idebtn:hover {
+  background: white;
+  color: black;
+}
+#paintbtn:hover {
+  background: white;
+  color: black;
+}
 .info {
   position: absolute;
   top: 1%;
@@ -131,6 +147,9 @@ body {
     backdrop-filter: blur(5px) saturate(100%);
     margin: 0;
     display: flex;
+    position: absolute;
+    width:100%;
+    bottom: 0;
 }
 #calculator {
   display: none; 
@@ -165,6 +184,7 @@ body {
   border: none;
   padding: 5px;
   border-radius: 0;
+  transition: background 0.5s;
 }
 #browbtn {
   background: black;
@@ -172,6 +192,7 @@ body {
   border: none;
   padding: 5px;
   border-radius: 0;
+  transition: background 0.5s;
 }
 #idebtn {
   background: black;
@@ -179,6 +200,7 @@ body {
   border: none;
   padding: 5px;
   border-radius: 0;
+  transition: background 0.5s;
 }
 #paintbtn {
   background: black;
@@ -186,6 +208,7 @@ body {
   border: none;
   padding: 5px;
   border-radius: 0;
+  transition: background 0.5s;
 }
 #ide {
   display: none; 
